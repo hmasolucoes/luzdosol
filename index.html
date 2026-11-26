@@ -24,8 +24,8 @@ body{margin:0;min-height:100vh;font-family:Inter,system-ui,-apple-system,"Segoe 
 .btn{position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;width:100%;margin:0 0 12px;padding:14px 20px 14px 16px;border-radius:40px;text-decoration:none;color:#fff;font:inherit;text-align:left;cursor:pointer;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);box-shadow:0 14px 26px rgba(0,0,0,.6),0 4px 0 rgba(0,0,0,.35),0 0 0 1px rgba(0,0,0,.25);transition:transform .18s}
 .btn:hover{transform:translateY(-2px)}
 .btn:active{transform:translateY(2px) scale(.985)}
-.btn::after{content:"";position:absolute;top:0;bottom:0;left:0;width:34%;pointer-events:none;will-change:transform;background:linear-gradient(100deg,transparent,rgba(255,255,255,.2),transparent);transform:translateX(-170%) skewX(-18deg);animation:shn 2.5s ease-in-out infinite both;animation-delay:var(--d,0s)}
-@keyframes shn{0%,25%{transform:translateX(-170%) skewX(-18deg)}100%{transform:translateX(380%) skewX(-18deg)}}
+.btn::after{content:"";position:absolute;top:0;bottom:0;left:0;width:34%;pointer-events:none;will-change:transform;background:linear-gradient(100deg,transparent,rgba(255,255,255,.2),transparent);transform:translateX(-170%) skewX(-18deg);animation:shn 6s ease-in-out infinite both;animation-delay:var(--d,0s)}
+@keyframes shn{0%,20%{transform:translateX(-170%) skewX(-18deg)}100%{transform:translateX(380%) skewX(-18deg)}}
 .btn .t,.btn .ic,.btn .go{position:relative;z-index:1}
 .ic{flex:0 0 46px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid rgba(255,255,255,.9);box-shadow:0 4px 8px rgba(0,0,0,.35),inset 0 -3px 5px rgba(0,0,0,.12)}
 .ic svg{width:25px;height:25px}
